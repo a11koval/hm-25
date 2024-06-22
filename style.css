@@ -1,0 +1,28 @@
+.red-positioned, .blue-positioned, .green-positioned{
+    position: absolute;
+  }
+.blue-positioned{
+    filter: hue-rotate(20deg); /* also creates a new stacking context */
+  top: 40px;
+  left: 40px;
+  background-color: blue;
+  z-index: 2;
+}
+.red-positioned{
+    background-color: red;
+    z-index: 100;
+}
+div {
+    height: 150px;
+    width: 150px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .green-positioned{
+    top: 80px;
+    left: 80px;
+    background-color: green;
+  }
